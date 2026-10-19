@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <brand>
-        <headerColor>#0B3C5D</headerColor>
+        <headerColor>#003C4D</headerColor>
         <logo>GTech_Logo</logo>
         <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
     </brand>

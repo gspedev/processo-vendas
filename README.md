@@ -4,19 +4,23 @@ Base comercial em Salesforce para o processo de vendas **B2B brasileiro**, do le
 
 ## O que tem aqui
 
-- **App Lightning "GTech Vendas"** com marca própria (cor e logo da GTech) e navegação enxuta: Home, Leads, Contas, Oportunidades, Cotações, Pedidos, Contratos e Contatos.
+- **App Lightning "GTech Vendas"** com a identidade visual da GTech (logo horizontal e cabeçalho `#003C4D`; kit completo em `docs/branding/`) e navegação enxuta: Home, Leads, Contas, Oportunidades, Cotações, Pedidos, Contratos e Contatos.
 - **Campos B2B Brasil** em cada objeto: CNPJ (único na Conta), Razão Social, Inscrição Estadual e Municipal, CNAE, Porte, Regime Tributário, Contribuinte ICMS, CPF do contato, condição e forma de pagamento, frete, NF-e, reajuste e renovação de contrato.
 - **Validation rules**: CNPJ (14 dígitos), CPF (11), chave da NF-e (44), dia de vencimento (1 a 31) e motivo obrigatório ao perder uma oportunidade.
 - **Dynamic Forms** por objeto, com seções pensadas para o dia a dia comercial.
 - **Permission set** `GTech_Vendas_Acesso` com acesso ao app, objetos e campos.
 - Perfil Admin ajustado para esconder os apps padrão da Salesforce do App Launcher.
 
+## Identidade visual
+
+Paleta: azul-petróleo `#003C4D` (cabeçalho), azul GTech `#385DA9` (marca), azul-gelo `#DCE5F5` (fundos claros) e branco. Arquivos em [`docs/branding/`](docs/branding): logos horizontais (fundo claro e escuro), ícone, avatar, banner e a prancha da marca.
+
 ## Estrutura
 
 ```
 force-app/main/default/
   applications/      app GTech Vendas
-  contentassets/     logo
+  contentassets/     logo, banner e avatar da marca
   flexipages/        Home e páginas de registro (Dynamic Forms)
   objects/           campos e validation rules de Lead, Conta, Contato,
                      Oportunidade, Cotação, Pedido e Contrato
