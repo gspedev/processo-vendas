@@ -3,7 +3,7 @@
     <apiVersion>67.0</apiVersion>
     <isExposed>true</isExposed>
     <masterLabel>GTech Ações Rápidas</masterLabel>
-    <description>Atalhos de 1 clique para criar Lead, Conta, Contato e Oportunidade a partir da Home.</description>
+    <description>Atalhos de 1 clique para criar Lead e Conta a partir da Home.</description>
     <targets>
         <target>lightning__HomePage</target>
     </targets>

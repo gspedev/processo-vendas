@@ -30,4 +30,12 @@
     <tabs>standard-Contract</tabs>
     <tabs>standard-Contact</tabs>
     <uiType>Lightning</uiType>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
+        <content>GTech_Vendas_Home</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
 </CustomApplication>

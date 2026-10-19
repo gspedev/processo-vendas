@@ -7,7 +7,7 @@ Base comercial em Salesforce para o processo de vendas **B2B brasileiro**, do le
 - **App Lightning "GTech Vendas"** com a identidade visual da GTech (logo horizontal e cabeçalho `#003C4D`; kit completo em `docs/branding/`) e navegação enxuta: Home, Leads, Contas, Oportunidades, Cotações, Pedidos, Contratos e Contatos.
 - **Campos B2B Brasil** em cada objeto: CNPJ (único na Conta), Razão Social, Inscrição Estadual e Municipal, CNAE, Porte, Regime Tributário, Contribuinte ICMS, CPF do contato, condição e forma de pagamento, frete, NF-e, reajuste e renovação de contrato.
 - **Validation rules**: CNPJ (14 dígitos), CPF (11), chave da NF-e (44), dia de vencimento (1 a 31) e motivo obrigatório ao perder uma oportunidade.
-- **Home com ações rápidas** (LWC `gtechAcoesRapidas`): criar Lead, Conta, Contato e Oportunidade com 1 clique.
+- **Home com ações rápidas** (LWC `gtechAcoesRapidas`): criar Lead e Conta com 1 clique.
 - **Dynamic Forms** por objeto, com seções pensadas para o dia a dia comercial.
 - **Permission set** `GTech_Vendas_Acesso` com acesso ao app, objetos e campos.
 - Perfil Admin ajustado para esconder os apps padrão da Salesforce do App Launcher.
