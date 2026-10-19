@@ -4,25 +4,37 @@
     <standardValue>
         <fullName>Open - Not Contacted</fullName>
         <default>true</default>
-        <label>Aberto - Não Contatado</label>
+        <label>Contato Inicial</label>
         <converted>false</converted>
     </standardValue>
     <standardValue>
         <fullName>Working - Contacted</fullName>
         <default>false</default>
-        <label>Em Andamento - Contatado</label>
+        <label>Interessado</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualified</fullName>
+        <default>false</default>
+        <label>Qualificado</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Closing</fullName>
+        <default>false</default>
+        <label>Fechando</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Not Converted</fullName>
+        <default>false</default>
+        <label>Não Interessado</label>
         <converted>false</converted>
     </standardValue>
     <standardValue>
         <fullName>Closed - Converted</fullName>
         <default>false</default>
-        <label>Fechado - Convertido</label>
+        <label>Convertido</label>
         <converted>true</converted>
-    </standardValue>
-    <standardValue>
-        <fullName>Closed - Not Converted</fullName>
-        <default>false</default>
-        <label>Fechado - Não Convertido</label>
-        <converted>false</converted>
     </standardValue>
 </StandardValueSet>

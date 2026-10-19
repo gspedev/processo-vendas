@@ -8,6 +8,11 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>GTech Vendas - Acesso</label>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Probabilidade__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Lead.CNPJ__c</field>
         <readable>true</readable>

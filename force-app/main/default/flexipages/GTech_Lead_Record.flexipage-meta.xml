@@ -71,8 +71,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.LeadSource</fieldItem>
-                <identifier>RecordLeadSourceSecondaryField5</identifier>
+                <fieldItem>Record.Probabilidade__c</fieldItem>
+                <identifier>RecordProbabilidade__cSecondaryField5</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-SecondaryFields</name>
@@ -320,6 +320,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Rating</fieldItem>
                 <identifier>S3C2F0_Rating</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Probabilidade__c</fieldItem>
+                <identifier>S3C2F9_Probabilidade__c</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Sec3-Col2</name>
@@ -574,6 +584,12 @@
         <type>Facet</type>
     </flexiPageRegions>
 <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>runtime_sales_pathassistant:pathAssistant</componentName>
+                <identifier>runtime_sales_pathassistant_pathAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>

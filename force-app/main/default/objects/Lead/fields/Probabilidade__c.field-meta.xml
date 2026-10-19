@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Probabilidade__c</fullName>
+    <externalId>false</externalId>
+    <label>Probabilidade</label>
+    <description>Probabilidade de conversão calculada pelo estágio (status) do lead.</description>
+    <inlineHelpText>Calculada automaticamente pelo estágio: Contato Inicial 10%, Interessado 30%, Qualificado 60%, Fechando 80%, Não Interessado 0%, Convertido 100%.</inlineHelpText>
+    <formula>CASE(TEXT(Status),
+    &quot;Open - Not Contacted&quot;, 10,
+    &quot;Working - Contacted&quot;, 30,
+    &quot;Qualified&quot;, 60,
+    &quot;Closing&quot;, 80,
+    &quot;Closed - Not Converted&quot;, 0,
+    &quot;Closed - Converted&quot;, 100,
+    0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>3</precision>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>
