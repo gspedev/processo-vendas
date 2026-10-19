@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Ações rápidas" icon-name="utility:rocket">
+        <div class="acoes">
+            <template for:each={acoes} for:item="acao">
+                <button
+                    key={acao.objeto}
+                    type="button"
+                    class="acao"
+                    data-objeto={acao.objeto}
+                    aria-label={acao.ariaLabel}
+                    onclick={handleClick}
+                >
+                    <span class="acao__icone">
+                        <lightning-icon icon-name={acao.icone} size="medium" alternative-text=""></lightning-icon>
+                    </span>
+                    <span class="acao__texto">
+                        <span class="acao__titulo">{acao.titulo}</span>
+                        <span class="acao__descricao">{acao.descricao}</span>
+                    </span>
+                    <lightning-icon
+                        class="acao__seta"
+                        icon-name="utility:add"
+                        size="x-small"
+                        alternative-text=""
+                    ></lightning-icon>
+                </button>
+            </template>
+        </div>
+    </lightning-card>
+</template>

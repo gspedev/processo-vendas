@@ -1,0 +1,77 @@
+:host {
+    --gtech-petroleo: #003c4d;
+    --gtech-azul: #385da9;
+    --gtech-gelo: #dce5f5;
+}
+
+.acoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 0.75rem;
+    padding: 0 1rem 0.5rem;
+}
+
+.acao {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    cursor: pointer;
+    color: var(--gtech-petroleo);
+    background: var(--gtech-gelo);
+    border: 1px solid transparent;
+    border-radius: 0.75rem;
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        transform 0.15s ease;
+}
+
+.acao:hover {
+    background: #ffffff;
+    border-color: var(--gtech-azul);
+    transform: translateY(-1px);
+}
+
+.acao:focus-visible {
+    outline: 2px solid var(--gtech-azul);
+    outline-offset: 2px;
+}
+
+.acao__icone {
+    display: inline-flex;
+    flex: none;
+}
+
+.acao__texto {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.acao__titulo {
+    font-weight: 700;
+}
+
+.acao__descricao {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.acao__seta {
+    flex: none;
+    --slds-c-icon-color-foreground-default: var(--gtech-azul);
+}
+
+@media (prefers-color-scheme: dark) {
+    .acao {
+        color: #ffffff;
+        background: var(--gtech-petroleo);
+    }
+
+    .acao:hover {
+        background: #0a5a73;
+    }
+}

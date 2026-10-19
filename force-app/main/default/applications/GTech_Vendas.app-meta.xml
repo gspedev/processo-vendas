@@ -5,6 +5,14 @@
         <logo>GTech_Logo</logo>
         <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
     </brand>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>GTech_Vendas_Home</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
     <description>Aplicativo comercial da GTech: do lead ao contrato, pensado para o processo de vendas B2B brasileiro.</description>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
