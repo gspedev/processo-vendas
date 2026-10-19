@@ -637,7 +637,6 @@
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
-    <description>Página de registro (Dynamic Forms) de Conta para o processo comercial B2B brasileiro.</description>
     <masterLabel>GTech Conta</masterLabel>
     <sobjectType>Account</sobjectType>
     <template>

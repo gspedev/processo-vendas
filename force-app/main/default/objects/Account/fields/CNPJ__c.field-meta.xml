@@ -3,7 +3,6 @@
     <fullName>CNPJ__c</fullName>
     <externalId>true</externalId>
     <label>CNPJ</label>
-    <description>CNPJ da conta, somente números. Único e External ID.</description>
     <inlineHelpText>Somente números (14 dígitos), sem pontos, barra ou traço. Único por estabelecimento (matriz e filial têm CNPJs diferentes).</inlineHelpText>
     <length>14</length>
     <required>false</required>

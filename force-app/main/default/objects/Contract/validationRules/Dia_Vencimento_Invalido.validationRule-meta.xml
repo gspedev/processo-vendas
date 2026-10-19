@@ -2,7 +2,6 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Dia_Vencimento_Invalido</fullName>
     <active>true</active>
-    <description>Dia do mês entre 1 e 31.</description>
     <errorConditionFormula>AND(NOT(ISBLANK(Dia_Vencimento__c)), OR(Dia_Vencimento__c &lt; 1, Dia_Vencimento__c &gt; 31))</errorConditionFormula>
     <errorDisplayField>Dia_Vencimento__c</errorDisplayField>
     <errorMessage>O dia de vencimento deve estar entre 1 e 31.</errorMessage>

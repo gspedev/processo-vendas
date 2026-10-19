@@ -3,7 +3,6 @@
     <fullName>Segmento_CNAE__c</fullName>
     <externalId>false</externalId>
     <label>Segmento CNAE</label>
-    <description>Segmento ou CNAE principal da empresa.</description>
     <length>80</length>
     <required>false</required>
     <trackTrending>false</trackTrending>

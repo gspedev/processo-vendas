@@ -3,7 +3,6 @@
     <fullName>Chave_NFe__c</fullName>
     <externalId>false</externalId>
     <label>Chave da NF-e</label>
-    <description>Chave de acesso da NF-e.</description>
     <inlineHelpText>Somente números (44 dígitos).</inlineHelpText>
     <length>44</length>
     <required>false</required>

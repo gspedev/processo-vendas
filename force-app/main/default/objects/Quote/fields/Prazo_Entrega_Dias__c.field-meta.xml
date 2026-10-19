@@ -3,7 +3,6 @@
     <fullName>Prazo_Entrega_Dias__c</fullName>
     <externalId>false</externalId>
     <label>Prazo de Entrega (dias)</label>
-    <description>Prazo de entrega em dias.</description>
     <precision>3</precision>
     <scale>0</scale>
     <required>false</required>

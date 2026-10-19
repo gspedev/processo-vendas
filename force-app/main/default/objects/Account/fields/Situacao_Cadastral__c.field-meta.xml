@@ -3,7 +3,6 @@
     <fullName>Situacao_Cadastral__c</fullName>
     <externalId>false</externalId>
     <label>Situação Cadastral</label>
-    <description>Situação cadastral na Receita Federal.</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

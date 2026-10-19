@@ -647,7 +647,6 @@
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
-    <description>Página de registro (Dynamic Forms) de Pedido para o processo comercial B2B brasileiro.</description>
     <masterLabel>GTech Pedido</masterLabel>
     <sobjectType>Order</sobjectType>
     <template>

@@ -3,7 +3,6 @@
     <fullName>Condicao_Pagamento__c</fullName>
     <externalId>false</externalId>
     <label>Condição de Pagamento</label>
-    <description>Condição de pagamento do pedido.</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

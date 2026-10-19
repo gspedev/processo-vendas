@@ -3,7 +3,6 @@
     <fullName>Data_Proximo_Passo__c</fullName>
     <externalId>false</externalId>
     <label>Data do Próximo Passo</label>
-    <description>Data da próxima ação.</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Date</type>

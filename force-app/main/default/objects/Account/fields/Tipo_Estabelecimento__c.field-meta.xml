@@ -3,7 +3,6 @@
     <fullName>Tipo_Estabelecimento__c</fullName>
     <externalId>false</externalId>
     <label>Tipo de Estabelecimento</label>
-    <description>Matriz ou filial. Filiais devem apontar a Conta Matriz no campo Conta Principal.</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

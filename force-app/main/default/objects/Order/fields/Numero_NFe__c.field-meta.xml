@@ -3,7 +3,6 @@
     <fullName>Numero_NFe__c</fullName>
     <externalId>false</externalId>
     <label>Número da NF-e</label>
-    <description>Número da nota fiscal eletrônica.</description>
     <length>9</length>
     <required>false</required>
     <trackTrending>false</trackTrending>

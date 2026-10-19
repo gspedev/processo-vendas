@@ -3,7 +3,6 @@
     <fullName>CNPJ__c</fullName>
     <externalId>false</externalId>
     <label>CNPJ</label>
-    <description>CNPJ do lead, somente números.</description>
     <inlineHelpText>Somente números (14 dígitos), sem pontos, barra ou traço.</inlineHelpText>
     <length>14</length>
     <required>false</required>

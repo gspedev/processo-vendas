@@ -3,7 +3,6 @@
     <fullName>Concorrente_Principal__c</fullName>
     <externalId>false</externalId>
     <label>Concorrente Principal</label>
-    <description>Principal concorrente nesta oportunidade.</description>
     <length>100</length>
     <required>false</required>
     <trackTrending>false</trackTrending>

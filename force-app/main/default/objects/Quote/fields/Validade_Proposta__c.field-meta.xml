@@ -3,7 +3,6 @@
     <fullName>Validade_Proposta__c</fullName>
     <externalId>false</externalId>
     <label>Validade da Proposta</label>
-    <description>Data limite de validade da proposta.</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Date</type>

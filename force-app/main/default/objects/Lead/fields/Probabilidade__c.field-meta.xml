@@ -3,8 +3,6 @@
     <fullName>Probabilidade__c</fullName>
     <externalId>false</externalId>
     <label>Probabilidade</label>
-    <description>Probabilidade de conversão calculada pelo estágio (status) do lead.</description>
-    <inlineHelpText>Calculada automaticamente pelo estágio: Contato Inicial 10%, Interessado 30%, Qualificado 60%, Fechando 80%, Não Interessado 0%, Convertido 100%.</inlineHelpText>
     <formula>CASE(TEXT(Status),
     &quot;Open - Not Contacted&quot;, 10,
     &quot;Working - Contacted&quot;, 30,

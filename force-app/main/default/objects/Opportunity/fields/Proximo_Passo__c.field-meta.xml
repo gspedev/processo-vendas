@@ -3,7 +3,6 @@
     <fullName>Proximo_Passo__c</fullName>
     <externalId>false</externalId>
     <label>Próximo Passo</label>
-    <description>Próxima ação combinada com o cliente.</description>
     <length>255</length>
     <required>false</required>
     <trackTrending>false</trackTrending>

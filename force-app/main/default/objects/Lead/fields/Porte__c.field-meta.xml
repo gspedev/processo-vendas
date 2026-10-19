@@ -3,7 +3,6 @@
     <fullName>Porte__c</fullName>
     <externalId>false</externalId>
     <label>Porte</label>
-    <description>Porte da empresa.</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

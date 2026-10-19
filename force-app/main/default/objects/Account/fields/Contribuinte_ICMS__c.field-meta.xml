@@ -3,7 +3,6 @@
     <fullName>Contribuinte_ICMS__c</fullName>
     <externalId>false</externalId>
     <label>Contribuinte ICMS</label>
-    <description>Indicador de contribuinte do ICMS (usado na emissão de NF-e).</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

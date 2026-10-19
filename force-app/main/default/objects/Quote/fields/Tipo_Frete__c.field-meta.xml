@@ -3,7 +3,6 @@
     <fullName>Tipo_Frete__c</fullName>
     <externalId>false</externalId>
     <label>Tipo de Frete</label>
-    <description>Modalidade de frete.</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

@@ -2,7 +2,6 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>CPF_Invalido</fullName>
     <active>true</active>
-    <description>Garante CPF com 11 dígitos numéricos.</description>
     <errorConditionFormula>AND(NOT(ISBLANK(CPF__c)), NOT(REGEX(CPF__c, "\\d{11}")))</errorConditionFormula>
     <errorDisplayField>CPF__c</errorDisplayField>
     <errorMessage>O CPF deve ter 11 dígitos, somente números.</errorMessage>

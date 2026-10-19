@@ -3,7 +3,6 @@
     <fullName>Renovacao_Automatica__c</fullName>
     <externalId>false</externalId>
     <label>Renovação Automática</label>
-    <description>Indica se o contrato renova automaticamente ao fim da vigência.</description>
     <required>false</required>
     <defaultValue>false</defaultValue>
     <trackTrending>false</trackTrending>

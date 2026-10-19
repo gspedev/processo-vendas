@@ -3,7 +3,6 @@
     <fullName>Dia_Vencimento__c</fullName>
     <externalId>false</externalId>
     <label>Dia de Vencimento</label>
-    <description>Dia do mês do vencimento da cobrança (1 a 31).</description>
     <precision>2</precision>
     <scale>0</scale>
     <required>false</required>

@@ -3,7 +3,6 @@
     <fullName>Razao_Social__c</fullName>
     <externalId>false</externalId>
     <label>Razão Social</label>
-    <description>Razão social conforme cartão CNPJ.</description>
     <length>150</length>
     <required>false</required>
     <trackTrending>false</trackTrending>

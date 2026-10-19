@@ -3,7 +3,6 @@
     <fullName>Inscricao_Municipal__c</fullName>
     <externalId>false</externalId>
     <label>Inscrição Municipal</label>
-    <description>Inscrição municipal (IM).</description>
     <length>20</length>
     <required>false</required>
     <trackTrending>false</trackTrending>

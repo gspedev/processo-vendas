@@ -3,7 +3,6 @@
     <fullName>Periodicidade_Reajuste_Meses__c</fullName>
     <externalId>false</externalId>
     <label>Periodicidade do Reajuste (meses)</label>
-    <description>Intervalo entre reajustes, em meses.</description>
     <precision>3</precision>
     <scale>0</scale>
     <required>false</required>

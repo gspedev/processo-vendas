@@ -3,7 +3,6 @@
     <fullName>Data_Prevista_Entrega__c</fullName>
     <externalId>false</externalId>
     <label>Data Prevista de Entrega</label>
-    <description>Data prevista de entrega ao cliente.</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Date</type>

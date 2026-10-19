@@ -3,7 +3,6 @@
     <fullName>CNAE__c</fullName>
     <externalId>false</externalId>
     <label>CNAE</label>
-    <description>CNAE principal (7 dígitos).</description>
     <length>10</length>
     <required>false</required>
     <trackTrending>false</trackTrending>

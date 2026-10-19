@@ -3,7 +3,6 @@
     <fullName>Numero_Pedido_Cliente__c</fullName>
     <externalId>false</externalId>
     <label>Número do Pedido do Cliente</label>
-    <description>Número do pedido de compra (PO) enviado pelo cliente.</description>
     <length>40</length>
     <required>false</required>
     <trackTrending>false</trackTrending>

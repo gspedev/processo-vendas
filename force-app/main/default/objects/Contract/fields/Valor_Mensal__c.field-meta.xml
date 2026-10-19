@@ -3,7 +3,6 @@
     <fullName>Valor_Mensal__c</fullName>
     <externalId>false</externalId>
     <label>Valor Mensal</label>
-    <description>Valor mensal recorrente do contrato.</description>
     <precision>16</precision>
     <scale>2</scale>
     <required>false</required>

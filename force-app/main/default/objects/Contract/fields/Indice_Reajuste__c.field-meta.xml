@@ -3,7 +3,6 @@
     <fullName>Indice_Reajuste__c</fullName>
     <externalId>false</externalId>
     <label>Índice de Reajuste</label>
-    <description>Índice usado no reajuste anual.</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

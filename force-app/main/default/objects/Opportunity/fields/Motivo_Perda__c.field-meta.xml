@@ -3,7 +3,6 @@
     <fullName>Motivo_Perda__c</fullName>
     <externalId>false</externalId>
     <label>Motivo da Perda</label>
-    <description>Obrigatório quando a oportunidade é perdida.</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

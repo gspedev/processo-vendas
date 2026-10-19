@@ -3,7 +3,6 @@
     <fullName>Regime_Tributario__c</fullName>
     <externalId>false</externalId>
     <label>Regime Tributário</label>
-    <description>Regime tributário da empresa.</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

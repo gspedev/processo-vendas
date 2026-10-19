@@ -3,7 +3,6 @@
     <fullName>Papel_Decisao__c</fullName>
     <externalId>false</externalId>
     <label>Papel na Decisão</label>
-    <description>Papel do contato no processo de compra.</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

@@ -3,7 +3,6 @@
     <fullName>CPF__c</fullName>
     <externalId>false</externalId>
     <label>CPF</label>
-    <description>CPF do contato, somente números.</description>
     <inlineHelpText>Somente números (11 dígitos).</inlineHelpText>
     <length>11</length>
     <required>false</required>

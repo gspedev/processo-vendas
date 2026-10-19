@@ -3,7 +3,6 @@
     <fullName>WhatsApp__c</fullName>
     <externalId>false</externalId>
     <label>WhatsApp</label>
-    <description>Número de WhatsApp do lead.</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Phone</type>

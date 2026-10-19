@@ -3,7 +3,6 @@
     <fullName>Forma_Pagamento__c</fullName>
     <externalId>false</externalId>
     <label>Forma de Pagamento</label>
-    <description>Forma de pagamento negociada.</description>
     <required>false</required>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
