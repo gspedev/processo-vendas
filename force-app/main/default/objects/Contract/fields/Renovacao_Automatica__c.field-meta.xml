@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Renovacao_Automatica__c</fullName>
+    <externalId>false</externalId>
+    <label>Renovação Automática</label>
+    <description>Indica se o contrato renova automaticamente ao fim da vigência.</description>
+    <required>false</required>
+    <defaultValue>false</defaultValue>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CNPJ_Invalido</fullName>
+    <active>true</active>
+    <description>Garante CNPJ com 14 dígitos numéricos.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(CNPJ__c)), NOT(REGEX(CNPJ__c, "\\d{14}")))</errorConditionFormula>
+    <errorDisplayField>CNPJ__c</errorDisplayField>
+    <errorMessage>O CNPJ deve ter 14 dígitos, somente números.</errorMessage>
+</ValidationRule>

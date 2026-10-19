@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Observacoes__c</fullName>
+    <externalId>false</externalId>
+    <label>Observações</label>
+    <description>Observações comerciais da proposta.</description>
+    <length>4000</length>
+    <visibleLines>4</visibleLines>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+</CustomField>
