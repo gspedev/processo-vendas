@@ -85,6 +85,9 @@
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
+                            <value>Lead.Registrar_Contato_Inicial</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Edit</value>
                         </valueListItems>
                         <valueListItems>
@@ -308,6 +311,16 @@
                 <identifier>S3C1F1_LeadSource</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Produto_Interesse__c</fieldItem>
+                <identifier>S3C1F9_Produto_Interesse__c</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Sec3-Col1</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -330,6 +343,16 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Probabilidade__c</fieldItem>
                 <identifier>S3C2F9_Probabilidade__c</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Motivo_Nao_Conversao__c</fieldItem>
+                <identifier>S3C2F8_Motivo_Nao_Conversao__c</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Sec3-Col2</name>
@@ -653,7 +676,6 @@
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
-    <description>Página de registro (Dynamic Forms) de Lead para o processo comercial B2B brasileiro.</description>
     <masterLabel>GTech Lead</masterLabel>
     <sobjectType>Lead</sobjectType>
     <template>

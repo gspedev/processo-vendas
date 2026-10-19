@@ -28,7 +28,7 @@
     <standardValue>
         <fullName>Closed - Not Converted</fullName>
         <default>false</default>
-        <label>Não Interessado</label>
+        <label>Não Convertido</label>
         <converted>false</converted>
     </standardValue>
     <standardValue>

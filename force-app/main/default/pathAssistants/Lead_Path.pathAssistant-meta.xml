@@ -4,5 +4,40 @@
     <entityName>Lead</entityName>
     <fieldName>Status</fieldName>
     <masterLabel>Lead Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Phone</fieldNames>
+        <fieldNames>Email</fieldNames>
+        <fieldNames>WhatsApp__c</fieldNames>
+        <info>Faça o primeiro contato. Registre a tarefa Contato Inicial com o resultado para liberar a próxima etapa.</info>
+        <picklistValueName>Open - Not Contacted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CNPJ__c</fieldNames>
+        <fieldNames>Porte__c</fieldNames>
+        <fieldNames>Segmento_CNAE__c</fieldNames>
+        <info>O lead respondeu. Colete CNPJ, porte e segmento para entender o perfil da empresa.</info>
+        <picklistValueName>Working - Contacted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Rating</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <info>Dados completos e necessidade confirmada. Registre a necessidade na descrição.</info>
+        <picklistValueName>Qualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Produto_Interesse__c</fieldNames>
+        <info>Informe o produto de maior interesse antes de fechar.</info>
+        <picklistValueName>Closing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Motivo_Nao_Conversao__c</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <info>Registre por que o lead não avançou. Se o motivo for Outro, descreva na descrição.</info>
+        <picklistValueName>Closed - Not Converted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>Use o botão Converter para criar conta, contato e oportunidade.</info>
+        <picklistValueName>Closed - Converted</picklistValueName>
+    </pathAssistantSteps>
     <recordTypeName>__MASTER__</recordTypeName>
 </PathAssistant>
