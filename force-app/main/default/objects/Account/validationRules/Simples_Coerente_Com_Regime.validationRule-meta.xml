@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Simples_Coerente_Com_Regime</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Optante_Simples__c, NOT(ISBLANK(TEXT(Regime_Tributario__c))), TEXT(Regime_Tributario__c) != &quot;Simples Nacional&quot;)</errorConditionFormula>
+    <errorDisplayField>Regime_Tributario__c</errorDisplayField>
+    <errorMessage>Conta optante pelo Simples deve ter o regime Simples Nacional.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MEI_Exige_Simples</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(MEI__c, NOT(Optante_Simples__c))</errorConditionFormula>
+    <errorDisplayField>Optante_Simples__c</errorDisplayField>
+    <errorMessage>MEI é optante do Simples Nacional.</errorMessage>
+</ValidationRule>
