@@ -4,11 +4,11 @@
     <externalId>false</externalId>
     <label>Probabilidade</label>
     <formula>CASE(TEXT(Status),
-    &quot;Open - Not Contacted&quot;, 10,
-    &quot;Working - Contacted&quot;, 30,
-    &quot;Qualified&quot;, 60,
+    &quot;Open - Not Contacted&quot;, 0.1,
+    &quot;Working - Contacted&quot;, 0.3,
+    &quot;Qualified&quot;, 0.6,
     &quot;Closed - Not Converted&quot;, 0,
-    &quot;Closed - Converted&quot;, 100,
+    &quot;Closed - Converted&quot;, 1,
     0)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <precision>3</precision>
