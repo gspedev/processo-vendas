@@ -33,19 +33,18 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.CNPJ_Formula__c</fieldItem>
                 <identifier>RecordCNPJ__cSecondaryField2</identifier>
-            
                 <visibilityRule>
                     <booleanFilter>1 OR 2</booleanFilter>
-                <criteria>
-                    <leftValue>{!Record.Status}</leftValue>
-                    <operator>EQUAL</operator>
-                    <rightValue>Open - Not Contacted</rightValue>
-                </criteria>
-                <criteria>
-                    <leftValue>{!Record.Status}</leftValue>
-                    <operator>EQUAL</operator>
-                    <rightValue>Working - Contacted</rightValue>
-                </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Status}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Open - Not Contacted</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Status}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Working - Contacted</rightValue>
+                    </criteria>
                 </visibilityRule>
             </fieldInstance>
         </itemInstances>
@@ -90,6 +89,13 @@
                     <valueList>
                         <valueListItems>
                             <value>Lead.Enviar_Contato_Inicial</value>
+                            <visibilityRule>
+                                <criteria>
+                                    <leftValue>{!Record.Status}</leftValue>
+                                    <operator>EQUAL</operator>
+                                    <rightValue>Open - Not Contacted</rightValue>
+                                </criteria>
+                            </visibilityRule>
                         </valueListItems>
                         <valueListItems>
                             <value>Edit</value>
@@ -175,34 +181,6 @@
                 <identifier>S1C1F2_Company</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>readonly</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.CNPJ_Formula__c</fieldItem>
-                <identifier>S1C1F9_CNPJ_Formula__c</identifier>
-                <visibilityRule>
-                    <booleanFilter>1 OR 2 OR 3</booleanFilter>
-                <criteria>
-                    <leftValue>{!Record.Status}</leftValue>
-                    <operator>EQUAL</operator>
-                    <rightValue>Qualified</rightValue>
-                </criteria>
-                <criteria>
-                    <leftValue>{!Record.Status}</leftValue>
-                    <operator>EQUAL</operator>
-                    <rightValue>Closed - Not Converted</rightValue>
-                </criteria>
-                <criteria>
-                    <leftValue>{!Record.Status}</leftValue>
-                    <operator>EQUAL</operator>
-                    <rightValue>Closed - Converted</rightValue>
-                </criteria>
-                </visibilityRule>
-            </fieldInstance>
-        </itemInstances>
         <name>Sec1-Col1</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -215,6 +193,30 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.CNPJ__c</fieldItem>
                 <identifier>S1C2F0_CNPJ__c</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Status}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Open - Not Contacted</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.CNPJ_Formula__c</fieldItem>
+                <identifier>S1C1F9_CNPJ_Formula__c</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Status}</leftValue>
+                        <operator>NE</operator>
+                        <rightValue>Open - Not Contacted</rightValue>
+                    </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -261,8 +263,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Email</fieldItem>
-                <identifier>S2C1F0_Email</identifier>
+                <fieldItem>Record.Phone</fieldItem>
+                <identifier>S2C1F1_Phone</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -271,8 +273,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Phone</fieldItem>
-                <identifier>S2C1F1_Phone</identifier>
+                <fieldItem>Record.WhatsApp__c</fieldItem>
+                <identifier>S2C2F0_WhatsApp__c</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Sec2-Col1</name>
@@ -285,8 +287,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.WhatsApp__c</fieldItem>
-                <identifier>S2C2F0_WhatsApp__c</identifier>
+                <fieldItem>Record.Email</fieldItem>
+                <identifier>S2C1F0_Email</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Sec2-Col2</name>
@@ -325,14 +327,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Produto_Interesse__c</fieldItem>
                 <identifier>S3C1F9_Produto_Interesse__c</identifier>
-            
-                <visibilityRule>
-                <criteria>
-                    <leftValue>{!Record.Status}</leftValue>
-                    <operator>EQUAL</operator>
-                    <rightValue>Qualified</rightValue>
-                </criteria>
-                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Sec3-Col1</name>
@@ -343,27 +337,16 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Probabilidade__c</fieldItem>
-                <identifier>S3C2F9_Probabilidade__c</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Motivo_Nao_Conversao__c</fieldItem>
                 <identifier>S3C2F8_Motivo_Nao_Conversao__c</identifier>
-            
                 <visibilityRule>
-                <criteria>
-                    <leftValue>{!Record.Status}</leftValue>
-                    <operator>EQUAL</operator>
-                    <rightValue>Closed - Not Converted</rightValue>
-                </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Status}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Closed - Not Converted</rightValue>
+                    </criteria>
                 </visibilityRule>
             </fieldInstance>
         </itemInstances>
@@ -541,6 +524,24 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection3</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2 OR 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!Record.Status}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Qualified</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Status}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Closed - Not Converted</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!Record.Status}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Closed - Converted</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
