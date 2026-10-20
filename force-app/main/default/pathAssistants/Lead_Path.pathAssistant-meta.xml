@@ -5,18 +5,21 @@
     <fieldName>Status</fieldName>
     <masterLabel>Lead Path</masterLabel>
     <pathAssistantSteps>
+        <info>Use o botão Converter para criar conta, contato e oportunidade.</info>
+        <picklistValueName>Closed - Converted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Motivo_Nao_Conversao__c</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <info>Registre por que o lead não avançou. Se o motivo for Outro, descreva na descrição.</info>
+        <picklistValueName>Closed - Not Converted</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
         <fieldNames>Phone</fieldNames>
         <fieldNames>Email</fieldNames>
         <fieldNames>WhatsApp__c</fieldNames>
         <info>Use a ação Enviar Contato Inicial. A etapa avança quando o lead responder o e-mail e preencher o formulário.</info>
         <picklistValueName>Open - Not Contacted</picklistValueName>
-    </pathAssistantSteps>
-    <pathAssistantSteps>
-        <fieldNames>CNPJ__c</fieldNames>
-        <fieldNames>Porte__c</fieldNames>
-        <fieldNames>Segmento_CNAE__c</fieldNames>
-        <info>O lead respondeu. Colete CNPJ, porte e segmento para entender o perfil da empresa.</info>
-        <picklistValueName>Working - Contacted</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
         <fieldNames>Produto_Interesse__c</fieldNames>
@@ -26,14 +29,11 @@
         <picklistValueName>Qualified</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
-        <fieldNames>Motivo_Nao_Conversao__c</fieldNames>
-        <fieldNames>Description</fieldNames>
-        <info>Registre por que o lead não avançou. Se o motivo for Outro, descreva na descrição.</info>
-        <picklistValueName>Closed - Not Converted</picklistValueName>
-    </pathAssistantSteps>
-    <pathAssistantSteps>
-        <info>Use o botão Converter para criar conta, contato e oportunidade.</info>
-        <picklistValueName>Closed - Converted</picklistValueName>
+        <fieldNames>CNPJ__c</fieldNames>
+        <fieldNames>Porte__c</fieldNames>
+        <fieldNames>Segmento_CNAE__c</fieldNames>
+        <info>O lead respondeu. Colete CNPJ, porte e segmento para entender o perfil da empresa.</info>
+        <picklistValueName>Working - Contacted</picklistValueName>
     </pathAssistantSteps>
     <recordTypeName>__MASTER__</recordTypeName>
 </PathAssistant>
