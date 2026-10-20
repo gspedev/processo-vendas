@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Closed Lost</masterLabel>
+        <translation>Fechado Perdido</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Closed Won</masterLabel>
+        <translation>Fechado Ganho</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Id. Decision Makers</masterLabel>
+        <translation>Identificação dos Decisores</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Needs Analysis</masterLabel>
+        <translation>Análise de Necessidades</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Negotiation/Review</masterLabel>
+        <translation>Negociação</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Perception Analysis</masterLabel>
+        <translation>Análise de Percepção</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Proposal/Price Quote</masterLabel>
+        <translation>Proposta Comercial</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Prospecting</masterLabel>
+        <translation>Prospecção</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Qualification</masterLabel>
+        <translation>Qualificação</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Value Proposition</masterLabel>
+        <translation>Proposta de Valor</translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

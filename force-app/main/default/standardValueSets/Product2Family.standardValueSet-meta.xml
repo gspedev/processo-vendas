@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consultoria</fullName>
+        <default>false</default>
+        <label>Consultoria</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Alocação</fullName>
+        <default>false</default>
+        <label>Alocação</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Desenvolvimento</fullName>
+        <default>false</default>
+        <label>Desenvolvimento</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Implantação</fullName>
+        <default>false</default>
+        <label>Implantação</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Integração</fullName>
+        <default>false</default>
+        <label>Integração</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dados e Analytics</fullName>
+        <default>false</default>
+        <label>Dados e Analytics</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Suporte</fullName>
+        <default>false</default>
+        <label>Suporte</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Treinamento</fullName>
+        <default>false</default>
+        <label>Treinamento</label>
+    </standardValue>
+</StandardValueSet>

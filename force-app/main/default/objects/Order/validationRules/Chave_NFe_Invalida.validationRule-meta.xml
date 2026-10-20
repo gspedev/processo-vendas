@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chave_NFe_Invalida</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISBLANK(Chave_NFe__c)), NOT(REGEX(Chave_NFe__c, "\\d{44}")))</errorConditionFormula>
+    <errorDisplayField>Chave_NFe__c</errorDisplayField>
+    <errorMessage>A chave da NF-e deve ter 44 dígitos, somente números.</errorMessage>
+</ValidationRule>

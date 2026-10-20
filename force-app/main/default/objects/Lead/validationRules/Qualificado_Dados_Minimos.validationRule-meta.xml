@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Qualificado_Dados_Minimos</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(
+        TEXT(Status) = &quot;Qualified&quot;,
+        TEXT(Status) = &quot;Closed - Converted&quot;
+    ),
+    OR(
+        NOT(REGEX(CNPJ__c, &quot;\\d{14}&quot;)),
+        AND(ISBLANK(Email), ISBLANK(Phone), ISBLANK(WhatsApp__c)),
+        ISBLANK(TEXT(Porte__c))
+    )
+)</errorConditionFormula>
+    <errorMessage>Para qualificar o lead, preencha CNPJ, e-mail, telefone ou WhatsApp e porte.</errorMessage>
+</ValidationRule>

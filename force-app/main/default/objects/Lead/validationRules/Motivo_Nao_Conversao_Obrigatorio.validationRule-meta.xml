@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_Nao_Conversao_Obrigatorio</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(TEXT(Status)=&quot;Closed - Not Converted&quot;, ISBLANK(TEXT(Motivo_Nao_Conversao__c)))</errorConditionFormula>
+    <errorDisplayField>Motivo_Nao_Conversao__c</errorDisplayField>
+    <errorMessage>Informe o motivo da não conversão.</errorMessage>
+</ValidationRule>

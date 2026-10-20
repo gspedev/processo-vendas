@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo_Perda__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo da Perda</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Preço</fullName>
+                <default>false</default>
+                <label>Preço</label>
+            </value>
+            <value>
+                <fullName>Prazo</fullName>
+                <default>false</default>
+                <label>Prazo</label>
+            </value>
+            <value>
+                <fullName>Concorrente</fullName>
+                <default>false</default>
+                <label>Concorrente</label>
+            </value>
+            <value>
+                <fullName>Sem orçamento</fullName>
+                <default>false</default>
+                <label>Sem orçamento</label>
+            </value>
+            <value>
+                <fullName>Sem retorno do cliente</fullName>
+                <default>false</default>
+                <label>Sem retorno do cliente</label>
+            </value>
+            <value>
+                <fullName>Projeto cancelado</fullName>
+                <default>false</default>
+                <label>Projeto cancelado</label>
+            </value>
+            <value>
+                <fullName>Outro</fullName>
+                <default>false</default>
+                <label>Outro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
