@@ -24,6 +24,7 @@
         <default>false</default>
         <label>Fechando</label>
         <converted>false</converted>
+        <isActive>false</isActive>
     </standardValue>
     <standardValue>
         <fullName>Closed - Not Converted</fullName>

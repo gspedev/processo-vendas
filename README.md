@@ -12,6 +12,14 @@ Base comercial em Salesforce para o processo de vendas **B2B brasileiro**, do le
 - **Permission set** `GTech_Vendas_Acesso` com acesso ao app, objetos e campos.
 - Perfil Admin ajustado para esconder os apps padrão da Salesforce do App Launcher.
 
+## Contato inicial do lead
+
+O vendedor usa a ação **Enviar Contato Inicial** no lead. O lead recebe um e-mail com um link único, preenche os dados da empresa numa página pública (Site + Visualforce) e aceita o tratamento de dados (LGPD). Ao enviar, a tarefa de contato é concluída e o lead avança para Interessado. O link expira em 7 dias e só funciona uma vez.
+
+## Processo de Lead
+
+Contato Inicial (10%), Interessado (30%), Qualificado (60%), Não Convertido (0%) e Convertido (100%). Regras: sem contato confirmado o lead não avança, Qualificado exige dados mínimos e produto de interesse, e Não Convertido exige motivo.
+
 ## Identidade visual
 
 Paleta: azul-petróleo `#003C4D` (cabeçalho), azul GTech `#385DA9` (marca), azul-gelo `#DCE5F5` (fundos claros) e branco. Arquivos em [`docs/branding/`](docs/branding): logos horizontais (fundo claro e escuro), ícone, avatar, banner e a prancha da marca.

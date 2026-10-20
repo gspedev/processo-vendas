@@ -17,8 +17,26 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentName>c:gtechAcoesRapidas</componentName>
-                <identifier>c_gtechAcoesRapidas</identifier>
+                <componentInstanceProperties>
+                    <name>entityNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>Account</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Opportunity</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>maxRecords</name>
+                    <value>5</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:recentItems</componentName>
+                <identifier>flexipage_recentItems</identifier>
             </componentInstance>
         </itemInstances>
         <name>top</name>
@@ -47,26 +65,8 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentInstanceProperties>
-                    <name>entityNames</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>Account</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Opportunity</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>label</name>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>maxRecords</name>
-                    <value>5</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:recentItems</componentName>
-                <identifier>flexipage_recentItems</identifier>
+                <componentName>gtechAcoesRapidas</componentName>
+                <identifier>c_gtechAcoesRapidas</identifier>
             </componentInstance>
         </itemInstances>
         <name>sidebar</name>

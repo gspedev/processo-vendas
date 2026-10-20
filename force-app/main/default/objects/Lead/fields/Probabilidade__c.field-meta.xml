@@ -7,7 +7,6 @@
     &quot;Open - Not Contacted&quot;, 10,
     &quot;Working - Contacted&quot;, 30,
     &quot;Qualified&quot;, 60,
-    &quot;Closing&quot;, 80,
     &quot;Closed - Not Converted&quot;, 0,
     &quot;Closed - Converted&quot;, 100,
     0)</formula>

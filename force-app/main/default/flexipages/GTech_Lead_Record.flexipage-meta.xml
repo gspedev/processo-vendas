@@ -5,7 +5,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Name</fieldItem>
                 <identifier>RecordNamePrimaryField</identifier>
@@ -14,7 +14,7 @@
         <name>Facet-PrimaryFields</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -29,7 +29,7 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Status</fieldItem>
                 <identifier>RecordStatusSecondaryField1</identifier>
@@ -78,14 +78,14 @@
         <name>Facet-SecondaryFields</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>Lead.Registrar_Contato_Inicial</value>
+                            <value>Lead.Enviar_Contato_Inicial</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Edit</value>
@@ -111,10 +111,24 @@
                 <identifier>record_flexipage_dynamicHighlights</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>hideUpdateButton</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>variant</name>
+                    <value>linear</value>
+                </componentInstanceProperties>
+                <componentName>runtime_sales_lead:pathAssistant</componentName>
+                <identifier>runtime_sales_lead_pathAssistant</identifier>
+            </componentInstance>
+        </itemInstances>
         <name>header</name>
         <type>Region</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -136,12 +150,12 @@
         <name>relatedTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Name</fieldItem>
                 <identifier>S1C1F0_Name</identifier>
@@ -170,7 +184,7 @@
         <name>Sec1-Col1</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -204,7 +218,7 @@
         <name>Sec1-Col2</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -228,7 +242,7 @@
         <name>Sec1-Columns</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -252,7 +266,7 @@
         <name>Sec2-Col1</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -266,7 +280,7 @@
         <name>Sec2-Col2</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -290,12 +304,12 @@
         <name>Sec2-Columns</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Status</fieldItem>
                 <identifier>S3C1F0_Status</identifier>
@@ -324,7 +338,7 @@
         <name>Sec3-Col1</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -358,7 +372,7 @@
         <name>Sec3-Col2</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -382,7 +396,7 @@
         <name>Sec3-Columns</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -396,11 +410,11 @@
         <name>Sec4-Col1</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <name>Sec4-Col2</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -424,12 +438,12 @@
         <name>Sec4-Columns</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.OwnerId</fieldItem>
                 <identifier>S5C1F0_OwnerId</identifier>
@@ -438,7 +452,7 @@
         <name>Sec5-Col1</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -452,7 +466,7 @@
         <name>Sec5-Col2</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -476,7 +490,7 @@
         <name>Sec5-Columns</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -570,7 +584,7 @@
         <name>detailTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -606,15 +620,13 @@
         <name>maintabs</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>runtime_sales_pathassistant:pathAssistant</componentName>
-                <identifier>runtime_sales_pathassistant_pathAssistant</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Tabs</value>
+                </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>tabs</name>
                     <value>maintabs</value>
@@ -626,7 +638,7 @@
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -640,7 +652,7 @@
         <name>activityTabContent</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -662,9 +674,13 @@
         <name>sidebartabs</name>
         <type>Facet</type>
     </flexiPageRegions>
-<flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Tabs</value>
+                </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>tabs</name>
                     <value>sidebartabs</value>

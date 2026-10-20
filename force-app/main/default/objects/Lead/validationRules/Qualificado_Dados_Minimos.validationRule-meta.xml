@@ -5,7 +5,6 @@
     <errorConditionFormula>AND(
     OR(
         TEXT(Status) = &quot;Qualified&quot;,
-        TEXT(Status) = &quot;Closing&quot;,
         TEXT(Status) = &quot;Closed - Converted&quot;
     ),
     OR(
