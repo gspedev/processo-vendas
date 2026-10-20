@@ -21,7 +21,7 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.CNPJ__c</fieldItem>
+                <fieldItem>Record.CNPJ_Formula__c</fieldItem>
                 <identifier>RecordCNPJ__cSecondaryField0</identifier>
             </fieldInstance>
         </itemInstances>

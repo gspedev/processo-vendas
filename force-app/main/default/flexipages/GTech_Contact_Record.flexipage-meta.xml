@@ -260,6 +260,16 @@
                 <identifier>S2C2F1_MailingAddress</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.WhatsApp__c</fieldItem>
+                <identifier>S2C2F9_WhatsApp__c</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Sec2-Col2</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -296,6 +306,26 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.OwnerId</fieldItem>
                 <identifier>S3C1F0_OwnerId</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Consentimento_LGPD__c</fieldItem>
+                <identifier>S3C1F8_Consentimento_LGPD__c</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>readonly</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Consentimento_Data__c</fieldItem>
+                <identifier>S3C1F9_Consentimento_Data__c</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Sec3-Col1</name>

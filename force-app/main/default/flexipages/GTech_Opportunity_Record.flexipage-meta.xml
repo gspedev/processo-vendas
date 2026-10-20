@@ -270,6 +270,16 @@
                 <identifier>S2C2F0_Concorrente_Principal__c</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Produto_Interesse__c</fieldItem>
+                <identifier>S2C2F9_Produto_Interesse__c</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Sec2-Col2</name>
         <type>Facet</type>
     </flexiPageRegions>

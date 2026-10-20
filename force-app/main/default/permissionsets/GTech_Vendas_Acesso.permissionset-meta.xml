@@ -15,6 +15,26 @@
         <flow>PV_Lead_Enviar_Contato_Inicial</flow>
     </flowAccesses>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Produto_Interesse__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.Consentimento_Data__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.Consentimento_LGPD__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.WhatsApp__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Account.CNPJ_Formula__c</field>
         <readable>true</readable>
