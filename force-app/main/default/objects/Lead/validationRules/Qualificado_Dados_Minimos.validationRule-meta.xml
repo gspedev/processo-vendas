@@ -10,9 +10,8 @@
     OR(
         NOT(REGEX(CNPJ__c, &quot;\\d{14}&quot;)),
         AND(ISBLANK(Email), ISBLANK(Phone), ISBLANK(WhatsApp__c)),
-        ISBLANK(TEXT(Porte__c)),
-        ISBLANK(Segmento_CNAE__c)
+        ISBLANK(TEXT(Porte__c))
     )
 )</errorConditionFormula>
-    <errorMessage>Para qualificar o lead, preencha CNPJ, e-mail, telefone ou WhatsApp, porte e segmento.</errorMessage>
+    <errorMessage>Para qualificar o lead, preencha CNPJ, e-mail, telefone ou WhatsApp e porte.</errorMessage>
 </ValidationRule>

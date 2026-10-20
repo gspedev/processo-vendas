@@ -16,6 +16,16 @@
     </flowAccesses>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Account.CNPJ_Formula__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.CNPJ_Formula__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Lead.Consentimento_Data__c</field>
         <readable>true</readable>
     </fieldPermissions>

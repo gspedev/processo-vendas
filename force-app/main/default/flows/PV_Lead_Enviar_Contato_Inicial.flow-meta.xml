@@ -42,9 +42,34 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Tela_Confirmar</targetReference>
+                <targetReference>Etapa_Inicial</targetReference>
             </connector>
             <label>Com e-mail</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Etapa_Inicial</name>
+        <label>Etapa inicial</label>
+        <locationX>176</locationX>
+        <locationY>341</locationY>
+        <defaultConnector>
+            <targetReference>Tela_Etapa_Errada</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Outra etapa</defaultConnectorLabel>
+        <rules>
+            <name>Em_Contato_Inicial</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Lead.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Open - Not Contacted</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Tela_Confirmar</targetReference>
+            </connector>
+            <label>Em Contato Inicial</label>
         </rules>
     </decisions>
     <decisions>
@@ -126,6 +151,22 @@
             <fieldType>DisplayText</fieldType>
         </fields>
         <nextOrFinishButtonLabel>Enviar e-mail</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Tela_Etapa_Errada</name>
+        <label>Etapa não permite o envio</label>
+        <locationX>380</locationX>
+        <locationY>395</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Texto_Etapa_Errada</name>
+            <fieldText>&lt;p&gt;O contato inicial só pode ser enviado enquanto o lead está na etapa Contato Inicial.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
         <showFooter>true</showFooter>
         <showHeader>false</showHeader>
     </screens>

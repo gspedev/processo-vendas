@@ -23,7 +23,6 @@
     </pathAssistantSteps>
     <pathAssistantSteps>
         <fieldNames>Produto_Interesse__c</fieldNames>
-        <fieldNames>Rating</fieldNames>
         <fieldNames>Description</fieldNames>
         <info>Lead pronto para converter: dados completos, necessidade confirmada e produto de interesse definido.</info>
         <picklistValueName>Qualified</picklistValueName>
@@ -31,8 +30,7 @@
     <pathAssistantSteps>
         <fieldNames>CNPJ__c</fieldNames>
         <fieldNames>Porte__c</fieldNames>
-        <fieldNames>Segmento_CNAE__c</fieldNames>
-        <info>O lead respondeu. Colete CNPJ, porte e segmento para entender o perfil da empresa.</info>
+        <info>O lead respondeu. Colete CNPJ e porte para entender o perfil da empresa.</info>
         <picklistValueName>Working - Contacted</picklistValueName>
     </pathAssistantSteps>
     <recordTypeName>__MASTER__</recordTypeName>

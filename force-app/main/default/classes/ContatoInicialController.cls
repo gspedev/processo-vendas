@@ -6,7 +6,7 @@ public without sharing class ContatoInicialController {
 
     public String cnpj { get; set; }
     public String porte { get; set; }
-    public String segmento { get; set; }
+    public Id produto { get; set; }
     public String telefone { get; set; }
     public String whatsapp { get; set; }
     public String cargo { get; set; }
@@ -28,6 +28,14 @@ public without sharing class ContatoInicialController {
 
     public Boolean getTemErros() {
         return ApexPages.hasMessages(ApexPages.Severity.ERROR);
+    }
+
+    public List<SelectOption> getProdutos() {
+        List<SelectOption> opcoes = new List<SelectOption>{ new SelectOption('', 'Selecione') };
+        for (Product2 p : [SELECT Id, Name FROM Product2 WHERE IsActive = true WITH SYSTEM_MODE ORDER BY Name]) {
+            opcoes.add(new SelectOption(p.Id, p.Name));
+        }
+        return opcoes;
     }
 
     public List<SelectOption> getPortes() {
@@ -59,7 +67,7 @@ public without sharing class ContatoInicialController {
             Lead lead = [SELECT Id, Status FROM Lead WHERE Id = :leadId WITH SYSTEM_MODE];
             lead.CNPJ__c = Documentos.somenteDigitos(cnpj);
             lead.Porte__c = porte;
-            lead.Segmento_CNAE__c = recortar(segmento, 80);
+            lead.Produto_Interesse__c = produto;
             lead.Phone = recortar(telefone, 40);
             lead.WhatsApp__c = recortar(whatsapp, 40);
             lead.Title = recortar(cargo, 128);
@@ -116,7 +124,7 @@ public without sharing class ContatoInicialController {
 
     private void preencher() {
         Lead lead = [
-            SELECT FirstName, LastName, Company, Phone, WhatsApp__c, Title, CNPJ__c, Porte__c, Segmento_CNAE__c
+            SELECT FirstName, LastName, Company, Phone, WhatsApp__c, Title, CNPJ__c, Porte__c, Produto_Interesse__c
             FROM Lead
             WHERE Id = :leadId
             WITH SYSTEM_MODE
@@ -125,7 +133,7 @@ public without sharing class ContatoInicialController {
         empresa = lead.Company;
         cnpj = lead.CNPJ__c;
         porte = lead.Porte__c;
-        segmento = lead.Segmento_CNAE__c;
+        produto = lead.Produto_Interesse__c;
         telefone = lead.Phone;
         whatsapp = lead.WhatsApp__c;
         cargo = lead.Title;
@@ -141,8 +149,8 @@ public without sharing class ContatoInicialController {
             erro('Selecione o porte da empresa.');
             ok = false;
         }
-        if (String.isBlank(segmento)) {
-            erro('Informe o segmento de atuação.');
+        if (produto == null || [SELECT COUNT() FROM Product2 WHERE Id = :produto AND IsActive = true WITH SYSTEM_MODE] == 0) {
+            erro('Selecione o produto ou serviço de interesse.');
             ok = false;
         }
         if (consentimento != true) {

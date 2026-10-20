@@ -27,10 +27,16 @@ private class ContatoInicialControllerTest {
         return new ContatoInicialController();
     }
 
+    private static Product2 novoProduto() {
+        Product2 p = new Product2(Name = 'Consultoria de Teste', IsActive = true);
+        insert p;
+        return p;
+    }
+
     private static void preencher(ContatoInicialController c) {
+        c.produto = novoProduto().Id;
         c.cnpj = '11.222.333/0001-81';
         c.porte = 'ME';
-        c.segmento = 'Desenvolvimento de software';
         c.telefone = '(11) 3000-0000';
         c.whatsapp = '(11) 99999-0000';
         c.cargo = 'Diretora Comercial';
@@ -78,7 +84,7 @@ private class ContatoInicialControllerTest {
         System.assertEquals('Completed', tarefa.Status);
         System.assertEquals('Contatado com sucesso', tarefa.Resultado_Contato__c);
         Lead atualizado = [
-            SELECT Status, CNPJ__c, Porte__c, Segmento_CNAE__c, Phone, WhatsApp__c, Title,
+            SELECT Status, CNPJ__c, Porte__c, Produto_Interesse__c, Phone, WhatsApp__c, Title,
                 Consentimento_LGPD__c, Consentimento_Data__c
             FROM Lead
             WHERE Id = :lead.Id
@@ -87,6 +93,7 @@ private class ContatoInicialControllerTest {
         System.assertEquals('Working - Contacted', atualizado.Status);
         System.assertEquals('11222333000181', atualizado.CNPJ__c);
         System.assertEquals('ME', atualizado.Porte__c);
+        System.assertNotEquals(null, atualizado.Produto_Interesse__c);
         System.assertEquals('Diretora Comercial', atualizado.Title);
         System.assert(atualizado.Consentimento_LGPD__c);
         System.assertNotEquals(null, atualizado.Consentimento_Data__c);
@@ -117,6 +124,37 @@ private class ContatoInicialControllerTest {
         System.assert(ApexPages.hasMessages(ApexPages.Severity.ERROR));
         System.assertEquals('Open - Not Contacted', [SELECT Status FROM Lead WHERE Id = :lead.Id WITH SYSTEM_MODE].Status);
         System.assertEquals('Waiting on someone else', [SELECT Status FROM Task WHERE WhoId = :lead.Id WITH SYSTEM_MODE].Status);
+    }
+
+    @IsTest
+    static void produtoInativoOuAusenteNaoSalva() {
+        Lead lead = novoLead();
+        ContatoInicialController c = abrir(novoToken(lead));
+        preencher(c);
+        Product2 inativo = new Product2(Name = 'Produto Inativo', IsActive = false);
+        insert inativo;
+        c.produto = inativo.Id;
+
+        c.enviar();
+
+        System.assertEquals('form', c.estado);
+        System.assertEquals('Open - Not Contacted', [SELECT Status FROM Lead WHERE Id = :lead.Id WITH SYSTEM_MODE].Status);
+
+        c.produto = null;
+        c.enviar();
+        System.assertEquals('form', c.estado);
+    }
+
+    @IsTest
+    static void listaApenasProdutosAtivos() {
+        Product2 ativo = novoProduto();
+        insert new Product2(Name = 'Produto Inativo', IsActive = false);
+        ContatoInicialController c = abrir(novoToken(novoLead()));
+
+        List<SelectOption> opcoes = c.getProdutos();
+
+        System.assertEquals(2, opcoes.size());
+        System.assertEquals(ativo.Id, opcoes[1].getValue());
     }
 
     @IsTest

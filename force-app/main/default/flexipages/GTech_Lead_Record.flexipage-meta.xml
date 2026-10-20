@@ -29,20 +29,24 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Status</fieldItem>
-                <identifier>RecordStatusSecondaryField1</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.CNPJ__c</fieldItem>
+                <fieldItem>Record.CNPJ_Formula__c</fieldItem>
                 <identifier>RecordCNPJ__cSecondaryField2</identifier>
+            
+                <visibilityRule>
+                    <booleanFilter>1 OR 2</booleanFilter>
+                <criteria>
+                    <leftValue>{!Record.Status}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Open - Not Contacted</rightValue>
+                </criteria>
+                <criteria>
+                    <leftValue>{!Record.Status}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Working - Contacted</rightValue>
+                </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -167,18 +171,36 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Title</fieldItem>
-                <identifier>S1C1F1_Title</identifier>
+                <fieldItem>Record.Company</fieldItem>
+                <identifier>S1C1F2_Company</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
+                    <value>readonly</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Company</fieldItem>
-                <identifier>S1C1F2_Company</identifier>
+                <fieldItem>Record.CNPJ_Formula__c</fieldItem>
+                <identifier>S1C1F9_CNPJ_Formula__c</identifier>
+                <visibilityRule>
+                    <booleanFilter>1 OR 2 OR 3</booleanFilter>
+                <criteria>
+                    <leftValue>{!Record.Status}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Qualified</rightValue>
+                </criteria>
+                <criteria>
+                    <leftValue>{!Record.Status}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Closed - Not Converted</rightValue>
+                </criteria>
+                <criteria>
+                    <leftValue>{!Record.Status}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Closed - Converted</rightValue>
+                </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Sec1-Col1</name>
@@ -203,16 +225,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Porte__c</fieldItem>
                 <identifier>S1C2F1_Porte__c</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Segmento_CNAE__c</fieldItem>
-                <identifier>S1C2F2_Segmento_CNAE__c</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Sec1-Col2</name>
@@ -309,46 +321,24 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>required</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Status</fieldItem>
-                <identifier>S3C1F0_Status</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.LeadSource</fieldItem>
-                <identifier>S3C1F1_LeadSource</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Produto_Interesse__c</fieldItem>
                 <identifier>S3C1F9_Produto_Interesse__c</identifier>
+            
+                <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.Status}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Qualified</rightValue>
+                </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Sec3-Col1</name>
         <type>Facet</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Rating</fieldItem>
-                <identifier>S3C2F0_Rating</identifier>
-            </fieldInstance>
-        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -367,6 +357,14 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Motivo_Nao_Conversao__c</fieldItem>
                 <identifier>S3C2F8_Motivo_Nao_Conversao__c</identifier>
+            
+                <visibilityRule>
+                <criteria>
+                    <leftValue>{!Record.Status}</leftValue>
+                    <operator>EQUAL</operator>
+                    <rightValue>Closed - Not Converted</rightValue>
+                </criteria>
+                </visibilityRule>
             </fieldInstance>
         </itemInstances>
         <name>Sec3-Col2</name>

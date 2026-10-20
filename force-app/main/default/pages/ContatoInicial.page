@@ -98,8 +98,10 @@
                         </apex:selectList>
                     </div>
                     <div class="campo cheio">
-                        <apex:outputLabel value="Segmento de atuação" for="segmento"/>
-                        <apex:inputText id="segmento" value="{!segmento}" maxlength="80"/>
+                        <apex:outputLabel value="Produto ou serviço de interesse" for="produto"/>
+                        <apex:selectList id="produto" value="{!produto}" size="1">
+                            <apex:selectOptions value="{!produtos}"/>
+                        </apex:selectList>
                     </div>
                     <div class="campo">
                         <apex:outputLabel value="Telefone" for="telefone"/>
