@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Aceito_Exige_Cotacao_Aceita</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(ISPICKVAL(StageName, &quot;Orçamento Aceito&quot;), ISPICKVAL(StageName, &quot;Fechado Ganho&quot;)), OR(ISBLANK(SyncedQuoteId), TEXT(SyncedQuote.Status) &lt;&gt; &quot;Aceita&quot;))</errorConditionFormula>
+    <errorDisplayField>StageName</errorDisplayField>
+    <errorMessage>Esta etapa exige uma cotação aceita pelo cliente e sincronizada com a oportunidade.</errorMessage>
+</ValidationRule>

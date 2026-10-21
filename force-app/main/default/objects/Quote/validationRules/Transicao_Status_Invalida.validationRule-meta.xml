@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transicao_Status_Invalida</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISCHANGED(Status), NOT(OR(
+AND(ISPICKVAL(PRIORVALUE(Status), &quot;Rascunho&quot;), OR(ISPICKVAL(Status, &quot;Em Elaboração&quot;), ISPICKVAL(Status, &quot;Cancelada&quot;))),
+AND(ISPICKVAL(PRIORVALUE(Status), &quot;Em Elaboração&quot;), OR(ISPICKVAL(Status, &quot;Rascunho&quot;), ISPICKVAL(Status, &quot;Em Aprovação&quot;), ISPICKVAL(Status, &quot;Pronta para Envio&quot;), ISPICKVAL(Status, &quot;Cancelada&quot;))),
+AND(ISPICKVAL(PRIORVALUE(Status), &quot;Em Aprovação&quot;), OR(ISPICKVAL(Status, &quot;Em Elaboração&quot;), ISPICKVAL(Status, &quot;Pronta para Envio&quot;), ISPICKVAL(Status, &quot;Reprovada&quot;))),
+AND(ISPICKVAL(PRIORVALUE(Status), &quot;Pronta para Envio&quot;), OR(ISPICKVAL(Status, &quot;Em Elaboração&quot;), ISPICKVAL(Status, &quot;Enviada&quot;), ISPICKVAL(Status, &quot;Cancelada&quot;))),
+AND(ISPICKVAL(PRIORVALUE(Status), &quot;Enviada&quot;), OR(ISPICKVAL(Status, &quot;Aceita&quot;), ISPICKVAL(Status, &quot;Recusada&quot;), ISPICKVAL(Status, &quot;Ajuste Solicitado&quot;), ISPICKVAL(Status, &quot;Cancelada&quot;))),
+AND(ISPICKVAL(PRIORVALUE(Status), &quot;Ajuste Solicitado&quot;), ISPICKVAL(Status, &quot;Cancelada&quot;))
+)))</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Essa mudança de status não é permitida para a cotação.</errorMessage>
+</ValidationRule>

@@ -8,45 +8,106 @@
         <allowEmail>true</allowEmail>
     </standardValue>
     <standardValue>
+        <fullName>Em Elaboração</fullName>
+        <default>false</default>
+        <label>Em Elaboração</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Em Aprovação</fullName>
+        <default>false</default>
+        <label>Em Aprovação</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Pronta para Envio</fullName>
+        <default>false</default>
+        <label>Pronta para Envio</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Enviada</fullName>
+        <default>false</default>
+        <label>Enviada</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Aceita</fullName>
+        <default>false</default>
+        <label>Aceita</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Recusada</fullName>
+        <default>false</default>
+        <label>Recusada</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Reprovada</fullName>
+        <default>false</default>
+        <label>Reprovada</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Ajuste Solicitado</fullName>
+        <default>false</default>
+        <label>Ajuste Solicitado</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Cancelada</fullName>
+        <default>false</default>
+        <label>Cancelada</label>
+        <allowEmail>false</allowEmail>
+    </standardValue>
+    <standardValue>
         <fullName>Revisão necessária</fullName>
         <default>false</default>
         <label>Revisão necessária</label>
+        <isActive>false</isActive>
         <allowEmail>true</allowEmail>
     </standardValue>
     <standardValue>
         <fullName>Em revisão</fullName>
         <default>false</default>
         <label>Em revisão</label>
+        <isActive>false</isActive>
         <allowEmail>true</allowEmail>
     </standardValue>
     <standardValue>
         <fullName>Aprovado</fullName>
         <default>false</default>
         <label>Aprovado</label>
+        <isActive>false</isActive>
         <allowEmail>true</allowEmail>
     </standardValue>
     <standardValue>
         <fullName>Rejeitado</fullName>
         <default>false</default>
         <label>Rejeitado</label>
+        <isActive>false</isActive>
         <allowEmail>true</allowEmail>
     </standardValue>
     <standardValue>
         <fullName>Apresentado</fullName>
         <default>false</default>
         <label>Apresentado</label>
+        <isActive>false</isActive>
         <allowEmail>true</allowEmail>
     </standardValue>
     <standardValue>
         <fullName>Aceito</fullName>
         <default>false</default>
         <label>Aceito</label>
+        <isActive>false</isActive>
         <allowEmail>true</allowEmail>
     </standardValue>
     <standardValue>
         <fullName>Negado</fullName>
         <default>false</default>
         <label>Negado</label>
+        <isActive>false</isActive>
         <allowEmail>true</allowEmail>
     </standardValue>
 </StandardValueSet>

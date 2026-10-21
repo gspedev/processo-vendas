@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alcada_Necessaria__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Discount &lt;= 0, 0, IF(Discount &lt;= 0.03, 1, IF(Discount &lt;= 0.06, 2, IF(Discount &lt;= 0.09, 3, 4))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Alçadas Necessárias</label>
+    <precision>1</precision>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+</CustomField>

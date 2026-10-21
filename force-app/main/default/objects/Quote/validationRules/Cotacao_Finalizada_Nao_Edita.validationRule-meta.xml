@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cotacao_Finalizada_Nao_Edita</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISNEW()), OR(ISPICKVAL(PRIORVALUE(Status), &quot;Aceita&quot;), ISPICKVAL(PRIORVALUE(Status), &quot;Recusada&quot;), ISPICKVAL(PRIORVALUE(Status), &quot;Reprovada&quot;), ISPICKVAL(PRIORVALUE(Status), &quot;Cancelada&quot;)))</errorConditionFormula>
+    <errorMessage>Cotação finalizada não pode ser alterada. Use Clonar para criar uma nova.</errorMessage>
+</ValidationRule>

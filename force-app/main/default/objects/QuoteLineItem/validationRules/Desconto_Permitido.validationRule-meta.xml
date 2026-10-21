@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Desconto_Permitido</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISBLANK(Discount)), Discount &lt;&gt; 0, Discount &lt;&gt; 0.03, Discount &lt;&gt; 0.06, Discount &lt;&gt; 0.09, Discount &lt;&gt; 0.15)</errorConditionFormula>
+    <errorDisplayField>Discount</errorDisplayField>
+    <errorMessage>O desconto do item só pode ser 3%, 6%, 9% ou 15%.</errorMessage>
+</ValidationRule>

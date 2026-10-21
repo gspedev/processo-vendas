@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cotacao_Fechada_Nao_Edita_Itens</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISPICKVAL(Quote.Status, &quot;Rascunho&quot;)), NOT(ISPICKVAL(Quote.Status, &quot;Em Elaboração&quot;)))</errorConditionFormula>
+    <errorMessage>Os itens só podem ser alterados com a cotação em Rascunho ou Em Elaboração.</errorMessage>
+</ValidationRule>
